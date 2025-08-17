@@ -10,7 +10,6 @@ navList.forEach((item) => {
       toggleMenu.classList.remove("open");
     });
     item.classList.add("active");
-
     document.querySelector(`#${item.dataset.target}`).scrollIntoView({
       behavior: "smooth",
     });

@@ -47,7 +47,10 @@
               <li data-target="home" class="active">
                 <button>الرئيسية</button>
               </li>
-              <li data-target="our-projects">
+              <li data-target="our-projects-desktop" class="hidden lg:block">
+                <button>مشاريعنا</button>
+              </li>
+              <li data-target="our-projects-mobile" class="lg:hidden">
                 <button>مشاريعنا</button>
               </li>
               <li data-target="about-us">
@@ -309,7 +312,7 @@
         </ul>
       </section>
       <section
-        id="our-projects"
+        id="our-projects-desktop"
         dir="rtl"
         class="our-projects-desktop hidden lg:block projects w-full my-20 space-y-5"
       >
@@ -385,7 +388,7 @@
         </div>
       </section>
       <section
-        id="our-projects"
+        id="our-projects-mobile"
         dir="rtl"
         class="our-projects-mobile lg:hidden py-24 relative"
       >
