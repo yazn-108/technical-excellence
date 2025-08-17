@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>التميز التقني</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playpen+Sans+Arabic:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header
+      class="sticky z-50 top-0 bg-white transition-all m-auto rounded-b-none border-b border-primary w-full"
+    >
+      <div
+        class="container mx-auto flex h-14 items-center gap-8 px-4 sm:px-6 lg:px-8 transition-all"
+      >
+        <a class="block" href="#">
+          <span class="sr-only">Home</span>
+          <svg
+            width="30"
+            height="40"
+            viewBox="0 0 30 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15 0L20.4545 5.33333L0 25.3333V14.6667L15 0Z"
+              fill="#06D1D4"
+            ></path>
+            <path
+              d="M2.90827 28.177L15 40L30 25.3334V14.6667L20.4545 5.33337L0 25.3334L0.0041688 25.3375L20.4545 5.33337V20.6667L11.25 29.6667V20.1324L2.90827 28.177Z"
+              fill="#3628A0"
+            ></path>
+          </svg>
+        </a>
+        <div class="flex flex-1 items-center justify-end md:justify-between">
+          <nav aria-label="Global" class="menu hidden md:block w-full">
+            <ul
+              dir="rtl"
+              class="flex items-center justify-center gap-4 text-base text-center *:p-2 *:hover:text-primary *:transition *:w-[100px] *:rounded-md"
+            >
+              <li data-target="home" class="active">
+                <button>الرئيسية</button>
+              </li>
+              <li data-target="our-projects">
+                <button>مشاريعنا</button>
+              </li>
+              <li data-target="about-us">
+                <button>من نحن؟</button>
+              </li>
+              <li data-target="our-services">
+                <button>خدماتنا</button>
+              </li>
+            </ul>
+          </nav>
+          <div class="flex items-center gap-4">
+            <a href="#">
+              <button
+                class="w-[100px] rounded-md text-primary bg-gray-100 px-5 py-2.5 text-sm font-medium transition hover/75 sm:block"
+              >
+                اتصل بنا
+              </button>
+            </a>
+            <button
+              class="toggle-menu block rounded-sm bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden"
+              type="button"
+            >
+              <label class="toggle">
+                <span class="sr-only">Toggle menu</span>
+                <div class="bars" id="bar1"></div>
+                <div class="bars" id="bar2"></div>
+                <div class="bars" id="bar3"></div>
+              </label>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section
+        id="home"
+        dir="rtl"
+        class="test lg:grid lg:h-screen lg:place-content-center"
+      >
+        <div
+          class="mx-auto w-screen max-w-screen-xl px-4 sm:px-6 lg:px-8 py-32 sm:py-16"
+        >
+          <div class="mx-auto max-w-prose text-center">
+            <h1 class="text-4xl font-medium text-gray-900 sm:text-5xl">
+              نسعى نحو
+              <strong class="text-primary"> التميز </strong>
+              في شركتنا نحن
+            </h1>
+            <p
+              class="mt-4 text-base text-pretty text-gray-700 sm:text-lg/relaxed"
+            >
+              نؤمن بأن النجاح يأتي من الابتكار والجودة والالتزام بخدمة عملائنا
+              بأفضل شكل ممكن. منذ تأسيسنا، عملنا على بناء سمعة راسخة من خلال
+              تقديم حلول متميزة تلبي احتياجات السوق المتغيرة بسرعة. فريقنا
+              المتميز يسعى دائمًا لتحقيق التميز والتميز في كل ما نقدمه، مع
+              التركيز على الابتكار والتطوير المستمر.
+            </p>
+            <div class="mt-4 flex justify-center gap-4 sm:mt-6">
+              <a
+                class="inline-block rounded border border-secondary bg-secondary px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-primary hover:border-primary"
+                href="#"
+              >
+                اتصل بنا
+              </a>
+              <p>او</p>
+              <button
+                class="inline-block rounded border border-gray-200 px-5 py-3 font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900"
+              >
+                تعرف علينا اكثر
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="our-methodology"
+        dir="rtl"
+        class="bg-secondary w-[98%] m-auto rounded-md p-5"
+      >
+        <h2 class="text-white text-center text-2xl">
+          <p>منهجية عملنا</p>
+          <sub class="text-primary text-sm">(ما يمزنا)</sub>
+        </h2>
+        <div class="p-10">
+          <ol
+            class="hidden sm:block relative space-y-8 before:absolute before:top-0 before:left-1/2 before:h-full before:w-0.5 before:-translate-x-1/2 before:rounded-full before:bg-primary"
+          >
+            <li class="group relative grid grid-cols-2 odd:-me-3 even:-ms-3">
+              <div
+                class="relative flex items-start gap-4 group-odd:flex-row-reverse group-odd:text-right group-even:order-last"
+              >
+                <span class="size-3 shrink-0 rounded-full bg-primary"></span>
+                <div class="-mt-2">
+                  <h3 class="text-lg font-bold text-white">الانطلاقة</h3>
+                  <p class="mt-0.5 text-sm text-gray-200">
+                    نبدأ بتحليل فكرتك وفهم احتياجاتك بدقة، ثم وضع خطة عمل شاملة
+                    تضمن تحقيق أهدافك بأعلى جودة وأسرع وقت.
+                  </p>
+                </div>
+              </div>
+              <div aria-hidden="true"></div>
+            </li>
+            <li class="group relative grid grid-cols-2 odd:-me-3 even:-ms-3">
+              <div
+                class="relative flex items-start gap-4 group-odd:flex-row-reverse group-odd:text-right group-even:order-last"
+              >
+                <span class="size-3 shrink-0 rounded-full bg-primary"></span>
+                <div class="-mt-2">
+                  <h3 class="text-lg font-bold text-white">التقنيات</h3>
+                  <p class="mt-0.5 text-sm text-gray-200">
+                    نطوّر النماذج الأولية ونبني أساس المشروع باستخدام أحدث
+                    التقنيات، مع ضمان توافقه مع متطلباتك وتوقعاتك.
+                  </p>
+                </div>
+              </div>
+              <div aria-hidden="true"></div>
+            </li>
+            <li class="group relative grid grid-cols-2 odd:-me-3 even:-ms-3">
+              <div
+                class="relative flex items-start gap-4 group-odd:flex-row-reverse group-odd:text-right group-even:order-last"
+              >
+                <span class="size-3 shrink-0 rounded-full bg-primary"></span>
+                <div class="-mt-2">
+                  <h3 class="text-lg font-bold text-white">الإطلاق</h3>
+                  <p class="mt-0.5 text-sm text-gray-200">
+                    نقوم بإطلاق المشروع رسميًا بعد اختبارات شاملة للأداء
+                    والجودة، مع توفير الدعم الفني لضمان بداية سلسة وناجحة.
+                  </p>
+                </div>
+              </div>
+              <div aria-hidden="true"></div>
+            </li>
+            <li class="group relative grid grid-cols-2 odd:-me-3 even:-ms-3">
+              <div
+                class="relative flex items-start gap-4 group-odd:flex-row-reverse group-odd:text-right group-even:order-last"
+              >
+                <span class="size-3 shrink-0 rounded-full bg-primary"></span>
+                <div class="-mt-2">
+                  <h3 class="text-lg font-bold text-white">الملاحظات</h3>
+                  <p class="mt-0.5 text-sm text-gray-200">
+                    نضيف الميزات المتقدمة ونطوّر المشروع بناءً على الملاحظات،
+                    لنحقق أقصى استفادة وقيمة لعملك.
+                  </p>
+                </div>
+              </div>
+              <div aria-hidden="true"></div>
+            </li>
+            <li class="group relative grid grid-cols-2 odd:-me-3 even:-ms-3">
+              <div
+                class="relative flex items-start gap-4 group-odd:flex-row-reverse group-odd:text-right group-even:order-last"
+              >
+                <span class="size-3 shrink-0 rounded-full bg-primary"></span>
+                <div class="-mt-2">
+                  <h3 class="text-lg font-bold text-white">التوسع</h3>
+                  <p class="mt-0.5 text-sm text-gray-200">
+                    ندعمك في تطوير المشروع باستمرار وتحسينه، لضمان بقائه مواكبًا
+                    للتطورات ومتوافقًا مع احتياجات السوق.
+                  </p>
+                </div>
+              </div>
+              <div aria-hidden="true"></div>
+            </li>
+          </ol>
+          <ol
+            class="sm:hidden relative space-y-8 before:absolute before:-ml-px before:h-full before:w-0.5 before:rounded-full before:bg-primary"
+          >
+            <li class="relative -ms-1.5 flex items-start gap-4">
+              <span class="size-3 shrink-0 rounded-full bg-primary"></span>
+              <div class="-mt-2">
+                <h3 class="text-lg font-bold text-white">الانطلاقة</h3>
+                <p class="mt-0.5 text-sm text-gray-200">
+                  نبدأ بتحليل فكرتك وفهم احتياجاتك بدقة، ثم وضع خطة عمل شاملة
+                  تضمن تحقيق أهدافك بأعلى جودة وأسرع وقت.
+                </p>
+              </div>
+            </li>
+            <li class="relative -ms-1.5 flex items-start gap-4">
+              <span class="size-3 shrink-0 rounded-full bg-primary"></span>
+              <div class="-mt-2">
+                <h3 class="text-lg font-bold text-white">التقنيات</h3>
+                <p class="mt-0.5 text-sm text-gray-200">
+                  نطوّر النماذج الأولية ونبني أساس المشروع باستخدام أحدث
+                  التقنيات، مع ضمان توافقه مع متطلباتك وتوقعاتك.
+                </p>
+              </div>
+            </li>
+            <li class="relative -ms-1.5 flex items-start gap-4">
+              <span class="size-3 shrink-0 rounded-full bg-primary"></span>
+              <div class="-mt-2">
+                <h3 class="text-lg font-bold text-white">الإطلاق</h3>
+                <p class="mt-0.5 text-sm text-gray-200">
+                  نقوم بإطلاق المشروع رسميًا بعد اختبارات شاملة للأداء والجودة،
+                  مع توفير الدعم الفني لضمان بداية سلسة وناجحة.
+                </p>
+              </div>
+            </li>
+            <li class="relative -ms-1.5 flex items-start gap-4">
+              <span class="size-3 shrink-0 rounded-full bg-primary"></span>
+              <div class="-mt-2">
+                <h3 class="text-lg font-bold text-white">الملاحظات</h3>
+                <p class="mt-0.5 text-sm text-gray-200">
+                  نضيف الميزات المتقدمة ونطوّر المشروع بناءً على الملاحظات،
+                  لنحقق أقصى استفادة وقيمة لعملك.
+                </p>
+              </div>
+            </li>
+            <li class="relative -ms-1.5 flex items-start gap-4">
+              <span class="size-3 shrink-0 rounded-full bg-primary"></span>
+              <div class="-mt-2">
+                <h3 class="text-lg font-bold text-white">التوسع</h3>
+                <p class="mt-0.5 text-sm text-gray-200">
+                  ندعمك في تطوير المشروع باستمرار وتحسينه، لضمان بقائه مواكبًا
+                  للتطورات ومتوافقًا مع احتياجات السوق.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section
+        id="our-partners"
+        dir="rtl"
+        class="w-[98%] m-auto my-20 space-y-5"
+      >
+        <h2 class="text-center text-2xl">شركائنا</h2>
+        <ul
+          class="flex justify-center items-center *:w-[200px] *:rounded *:h-10 flex-wrap gap-4 *:bg-white"
+        >
+          <li class="shadow p-1 flex items-center justify-center">
+            <a href="/"
+              ><img class="w-[150px]" src="assets/logoipsum-375.svg" alt=""
+            /></a>
+          </li>
+          <li class="shadow p-1 flex items-center justify-center">
+            <a href="/"
+              ><img class="w-[150px]" src="assets/logoipsum-380.svg" alt=""
+            /></a>
+          </li>
+          <li class="shadow p-1 flex items-center justify-center">
+            <a href="/"
+              ><img class="w-[150px]" src="assets/logoipsum-382.svg" alt=""
+            /></a>
+          </li>
+          <li class="shadow p-1 flex items-center justify-center">
+            <a href="/"
+              ><img class="w-[150px]" src="assets/logoipsum-385.svg" alt=""
+            /></a>
+          </li>
+          <li class="shadow p-1 flex items-center justify-center">
+            <a href="/"
+              ><img class="w-[150px]" src="assets/logoipsum-388.svg" alt=""
+            /></a>
+          </li>
+          <li class="shadow p-1 flex items-center justify-center">
+            <a href="/"
+              ><img class="w-[150px]" src="assets/logoipsum-391.svg" alt=""
+            /></a>
+          </li>
+        </ul>
+      </section>
+      <section
+        id="our-projects"
+        dir="rtl"
+        class="our-projects-desktop hidden lg:block projects w-full my-20 space-y-5"
+      >
+        <h2 class="text-center text-2xl">مشاريعنا</h2>
+        <div
+          class="h-[500px] w-full overflow-hidden relative before:content-[''] before:-z-10 before:bg-primary before:h-full before:w-1/2 before:rounded-2xl before:absolute before:left-1/2 before:top-1/2 before:-translate-1/2"
+        >
+          <div class="flex justify-center items-center gap-10 h-full p-10">
+            <div class="h-[280px] w-[400px] relative group cursor-pointer">
+              <div
+                class="absolute -top-5 left-1/2 -translate-x-1/2 z-10 w-full text-center grid gap-5"
+              >
+                <img
+                  loading="lazy"
+                  class="object-cover w-[90%] h-[220px] m-auto rounded-md group-hover:w-full transition-all shadow"
+                  src="/assets/phones.jpg"
+                />
+                <h3 class="text-lg">الهواتف</h3>
+              </div>
+              <div
+                class="grid items-end size-full group-hover:translate-y-10 bg-white shadow-2xl transition-all rounded-md"
+              >
+                <p
+                  class="h-[80px] opacity-0 group-hover:opacity-100 transition-all p-5 truncate text-center"
+                >
+                  انقر لعرض صفحة مشاريع الهواتف
+                </p>
+              </div>
+            </div>
+            <div class="h-[280px] w-[400px] relative group cursor-pointer">
+              <div
+                class="absolute -top-5 left-1/2 -translate-x-1/2 z-10 w-full text-center grid gap-5"
+              >
+                <img
+                  loading="lazy"
+                  class="object-cover w-[90%] h-[220px] m-auto rounded-md group-hover:w-full transition-all shadow"
+                  src="/assets/websites.jpg"
+                />
+                <h3 class="text-lg">المواقع الالكتروني</h3>
+              </div>
+              <div
+                class="grid items-end size-full group-hover:translate-y-10 bg-white shadow-2xl transition-all rounded-md"
+              >
+                <p
+                  class="h-[80px] opacity-0 group-hover:opacity-100 transition-all p-5 truncate text-center"
+                >
+                  انقر لعرض صفحة مشاريع المواقع الالكتروني
+                </p>
+              </div>
+            </div>
+            <div class="h-[280px] w-[400px] relative group cursor-pointer">
+              <div
+                class="absolute -top-5 left-1/2 -translate-x-1/2 z-10 w-full text-center grid gap-5"
+              >
+                <img
+                  loading="lazy"
+                  class="object-cover w-[90%] h-[220px] m-auto rounded-md group-hover:w-full transition-all shadow"
+                  src="/assets/ux-ui.jpg"
+                />
+                <h3 class="text-lg">الواجهات</h3>
+              </div>
+              <div
+                class="grid items-end size-full group-hover:translate-y-10 bg-white shadow-2xl transition-all rounded-md"
+              >
+                <p
+                  class="h-[80px] opacity-0 group-hover:opacity-100 transition-all p-5 truncate text-center"
+                >
+                  انقر لعرض صفحة مشاريع الـux/ui
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="our-projects"
+        dir="rtl"
+        class="our-projects-mobile lg:hidden py-24 relative"
+      >
+        <div class="w-full max-w-7xl px-6 lg:px-8 mx-auto">
+          <div class="flex items-center justify-center flex-col gap-5 mb-14">
+            <h2 class="font-manrope text-2xl text-gray-900 text-center">
+              مشاريعنا
+            </h2>
+            <p
+              class="text-lg font-normal text-gray-500 max-w-3xl mx-auto text-center"
+            >
+              المكان الذي نطلق فيه العنان لخيلنا في الابداع والاحتراف مع السرعة
+              ودقة الانجاز.
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-14"
+          >
+            <div
+              class="mobile-apps sm:col-span-2 bg-cover bg-center max-md:h-80 rounded-lg flex justify-end flex-col px-7 py-6"
+              style="
+                background-image: url(https://pagedone.io/asset/uploads/1707712993.png);
+              "
+            >
+              <h6 class="font-medium text-xl leading-8 text-white mb-4">
+                الهواتف
+              </h6>
+              <button
+                dir="rtl"
+                type="button"
+                class="text-white text-center bg-primary hover:bg-secondary transition-all font-medium rounded-lg text-sm p-2.5 nline-flex items-center me-2"
+              >
+                تصفح
+              </button>
+            </div>
+            <div
+              class="web-sites bg-cover rounded-lg max-sm:h-80 flex justify-start flex-col px-7 py-6"
+              style="
+                background-image: url(https://pagedone.io/asset/uploads/1707713043.png);
+              "
+            >
+              <h6 class="font-medium text-xl leading-8 text-white mb-4">
+                مواقع إلكترونية
+              </h6>
+              <button
+                dir="rtl"
+                type="button"
+                class="text-white text-center bg-primary hover:bg-secondary transition-all font-medium rounded-lg text-sm p-2.5 nline-flex items-center me-2"
+              >
+                تصفح
+              </button>
+            </div>
+            <div
+              class="ux-ui-designs bg-cover rounded-lg max-sm:h-80 flex justify-end flex-col px-7 py-6"
+              style="
+                background-image: url(https://pagedone.io/asset/uploads/1707713066.png);
+              "
+            >
+              <h6 class="font-medium text-xl leading-8 text-white mb-4">
+                تصاميم UX/UI
+              </h6>
+              <button
+                dir="rtl"
+                type="button"
+                class="text-white text-center bg-primary hover:bg-secondary transition-all font-medium rounded-lg text-sm p-2.5 nline-flex items-center me-2"
+              >
+                تصفح
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="about-us"
+        dir="rtl"
+        class="projects m-auto my-20 space-y-5 w-[98%]"
+      >
+        <h2 class="text-center text-2xl">من نحن؟</h2>
+        <div
+          dir="ltr"
+          class="grid lg:grid-cols-[1fr_100px_1fr] gap-y-5 items-center overflow-hidden bg-secondary rounded-2xl py-8 lg:py-14 sm:px-8 md:px-16 lg:px-16"
+        >
+          <div
+            dir="rtl"
+            class="flex gap-y-3 justify-evenly items-center max-lg:order-2"
+          >
+            <ul
+              class="space-y-3 text-base font-medium text-white w-fit sm:w-[200px] grid justify-center"
+            >
+              <li class="flex items-center">
+                <svg
+                  class="w-5 h-5 mr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+                مواقع الكترونية
+              </li>
+              <li class="flex items-center">
+                <svg
+                  class="w-5 h-5 mr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+                تطبيقات موبايل
+              </li>
+              <li class="flex items-center">
+                <svg
+                  class="w-5 h-5 mr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+                تصاميم UX/UI
+              </li>
+            </ul>
+            <ul
+              class="space-y-3 text-base font-medium text-white w-fit sm:w-[200px] grid sm:justify-center"
+            >
+              <li class="flex items-center">
+                <svg
+                  class="w-5 h-5 mr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+                سرعة في الانجاز
+              </li>
+              <li class="flex items-center">
+                <svg
+                  class="w-5 h-5 mr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+                احترافية بالنتيجة
+              </li>
+              <li class="flex items-center">
+                <svg
+                  class="w-5 h-5 mr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+                دقة في العمل
+              </li>
+            </ul>
+          </div>
+          <div
+            class="hidden lg:flex items-center justify-center -translate-y-8 before:content-[''] before:h-full before:w-2 before:bg-white before:rotate-45 after:content-[''] after:h-full after:w-2 after:bg-white after:-rotate-45 h-[calc(100%+340px)]"
+          ></div>
+          <div
+            dir="rtl"
+            class="w-full inline-flex items-center justify-center px-9 font-normal text-primary"
+          >
+            نحن شركة التميز التقني لتطوير المواقع الالكترونية تأسسنا عام 2020
+            بمساهمة كوادر اكاديمية ومع نخبة من المبرمجين والمصممين المحترفين.
+            هدفنا هو تقديم حلول تقنية مبتكرة تلبي احتياجات عملائنا وتساعدهم في
+            تحقيق أهدافهم التجارية. نحن نؤمن بقوة الابتكار والجودة، ونسعى دائمًا
+            لتقديم أفضل الخدمات لعملائنا.
+          </div>
+        </div>
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="rounded-lg bg-secondary p-6 text-center">
+            <h4 class="mb-2 text-3xl font-bold text-primary">5+</h4>
+            <p class="text-gray-400">سنوات خبرتنا</p>
+          </div>
+          <div class="rounded-lg bg-secondary p-6 text-center">
+            <h4 class="mb-2 text-3xl font-bold text-primary">40+</h4>
+            <p class="text-gray-400">مشاريعنا</p>
+          </div>
+          <div class="rounded-lg bg-secondary p-6 text-center">
+            <h4 class="mb-2 text-3xl font-bold text-primary">10+</h4>
+            <p class="text-gray-400">شركائنا</p>
+          </div>
+          <div class="rounded-lg bg-secondary p-6 text-center">
+            <h4 class="mb-2 text-3xl font-bold text-primary">100+</h4>
+            <p class="text-gray-400">عملائنا</p>
+          </div>
+        </div>
+      </section>
+      <section
+        id="our-services"
+        dir="rtl"
+        class="projects w-[98%] m-auto my-32 space-y-5"
+      >
+        <h2 class="text-center text-2xl">خدماتنا</h2>
+        <div class="overflow-hidden space-y-24 text-secondary-dark">
+          <div
+            id="web-sites"
+            class="flex flex-col lg:flex-row justify-between items-center px-2 sm:px-20 gap-10"
+          >
+            <div class="space-y-5 lg:w-2/4 xl:w-auto">
+              <span
+                class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"
+                  />
+                </svg>
+              </span>
+              <h2 class="text-3xl font-bold tracking-tight">
+                مواقع الكترونية:
+              </h2>
+              <p class="text-lg text-secondary">
+                نقوم بتصميم وتطوير مواقع إلكترونية احترافية تجمع بين الجاذبية
+                البصرية والأداء العالي، مع ضمان تجربة مستخدم سلسة ومتوافقة مع
+                جميع الأجهزة والمتصفحات، مما يساعدك على إبراز علامتك التجارية
+                وتحقيق أهدافك الرقمية.
+              </p>
+              <a
+                class="inline-flex rounded-lg bg-primary px-4 py-1.5 text-base font-semibold leading-7 shadow-sm text-white"
+                href="/login"
+              >
+                <button>اطلب الان</button>
+              </a>
+            </div>
+            <div
+              class="lg:w-2/4 xl:w-auto max-w-[600px] max-h-[400px] overflow-hidden rounded-xl shadow-2xl"
+            >
+              <img
+                loading="lazy"
+                class="object-cover size-full"
+                src="assets/websites.jpg"
+              />
+            </div>
+          </div>
+          <div
+            id="ux-ui-designs"
+            class="flex flex-col-reverse lg:flex-row justify-between items-center px-2 sm:px-20 gap-10"
+          >
+            <div
+              class="lg:w-2/4 xl:w-auto max-w-[600px] max-h-[400px] overflow-hidden rounded-xl shadow-2xl"
+            >
+              <img
+                loading="lazy"
+                class="object-cover size-full"
+                src="assets/ux-ui.jpg"
+              />
+            </div>
+            <div class="space-y-5 lg:w-2/4 xl:w-auto">
+              <span
+                class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.098 19.902a3.75 3.75 0 0 0 5.304 0l6.401-6.402M6.75 21A3.75 3.75 0 0 1 3 17.25V4.125C3 3.504 3.504 3 4.125 3h5.25c.621 0 1.125.504 1.125 1.125v4.072M6.75 21a3.75 3.75 0 0 0 3.75-3.75V8.197M6.75 21h13.125c.621 0 1.125-.504 1.125-1.125v-5.25c0-.621-.504-1.125-1.125-1.125h-4.072M10.5 8.197l2.88-2.88c.438-.439 1.15-.439 1.59 0l3.712 3.713c.44.44.44 1.152 0 1.59l-2.879 2.88M6.75 17.25h.008v.008H6.75v-.008Z"
+                  />
+                </svg>
+              </span>
+              <h2 class="text-3xl font-bold tracking-tight">تصاميم UX/UI:</h2>
+              <p class="text-lg text-secondary">
+                نصمم واجهات وتجارب مستخدم مبتكرة تركز على سهولة الاستخدام وجمال
+                المظهر، مع دراسة سلوك المستخدم لضمان تفاعل فعّال وانطباع مميز،
+                مما يعزز ولاء العملاء ويزيد من نجاح مشروعك الرقمي.
+              </p>
+              <a
+                class="inline-flex rounded-lg bg-primary px-4 py-1.5 text-base font-semibold leading-7 shadow-sm text-white"
+                href="/login"
+              >
+                <button>اطلب الان</button>
+              </a>
+            </div>
+          </div>
+          <div
+            id="mobile-apps"
+            class="flex flex-col lg:flex-row justify-between items-center px-2 sm:px-20 gap-10"
+          >
+            <div class="space-y-5 lg:w-2/4 xl:w-auto">
+              <span
+                class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+                  />
+                </svg>
+              </span>
+              <h2 class="text-3xl font-bold tracking-tight">تطبيقات:</h2>
+              <p class="text-lg text-secondary">
+                نطور تطبيقات مبتكرة وعالية الأداء تعمل بسلاسة على مختلف الأنظمة،
+                مصممة خصيصًا لتلبية احتياجاتك وتحقيق أهدافك، مع ضمان أمان
+                البيانات وتجربة مستخدم استثنائية.
+              </p>
+              <a
+                class="inline-flex rounded-lg bg-primary px-4 py-1.5 text-base font-semibold leading-7 shadow-sm text-white"
+                href="/login"
+              >
+                <button>اطلب الان</button>
+              </a>
+            </div>
+            <div
+              class="lg:w-2/4 xl:w-auto max-w-[600px] max-h-[400px] overflow-hidden rounded-xl shadow-2xl"
+            >
+              <img
+                loading="lazy"
+                class="object-cover size-full"
+                src="assets/phones.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div dir="rtl" class="bg-secondary-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 text-center">
+          <h2 class="text-4xl font-bold text-gray-100">اتصل بنا</h2>
+          <p
+            class="pt-6 pb-6 text-base max-w-2xl text-center m-auto text-gray-400"
+          >
+            هل لديك ما تقوله؟ نحن هنا لمساعدتك. املأ النموذج أو أرسل بريدًا
+            إلكترونيًا أو اتصل بنا.
+          </p>
+        </div>
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 grid md:grid-cols-2 lg:grid-cols-2 gap-y-8 md:gap-x-8 md:gap-y-8 lg:gap-x-8 lg:gap-y-16"
+        >
+          <div>
+            <h2 class="text-lg font-bold text-gray-100">تواصل معنا</h2>
+            <p class="max-w-sm mt-4 mb-4 text-gray-400">
+              تواصل معنا عبر وسائل التواصل الاخرى .
+            </p>
+            <div class="flex items-center mt-8 space-x-2 text-gray-400">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"
+                ></path>
+              </svg>
+              <span>14th avenue glory road</span>
+            </div>
+            <div class="flex items-center mt-2 space-x-2 text-gray-400">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                ></path>
+              </svg>
+              <a href="mailto:yazn_108@outlook.sa">yazn_108@outlook.sa</a>
+            </div>
+            <div class="flex items-center mt-2 space-x-2 text-gray-400">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                ></path>
+              </svg>
+              <a dir="ltr" href="tel:+905500000000">+90 5500000000</a>
+            </div>
+          </div>
+          <div>
+            <form>
+              <input
+                type="checkbox"
+                id=""
+                class="hidden"
+                style="display: none"
+                name="botcheck"
+              />
+              <div class="mb-5">
+                <input
+                  type="text"
+                  placeholder="الاسم الكامل"
+                  autocomplete="false"
+                  class="w-full px-4 py-3 border-2 text-white rounded-md outline-none placeholder:text-gray-200 border-secondary focus:border-primary"
+                  name="name"
+                />
+              </div>
+              <div class="mb-5">
+                <label for="email_address" class="sr-only"
+                  >البريد الالكتروني</label
+                >
+                <input
+                  id="email_address"
+                  type="email"
+                  placeholder="البريد الالكتروني"
+                  autocomplete="false"
+                  class="w-full px-4 py-3 border-2 text-white rounded-md outline-none placeholder:text-gray-200 bg-gray-90 border-secondary focus:border-primary"
+                  name="email"
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  placeholder="رسالتك"
+                  class="w-full px-4 py-3 border-2 text-white placeholder:text-gray-200 rounded-md outline-none h-36 border-secondary focus:border-primary"
+                  name="message"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full py-4 font-semibold transition-colors rounded-md focus:outline-none px-7 bg-white hover:bg-white/35 hover:text-white text-black"
+              >
+                ارسل الرسالة
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex flex-col space-y-1 justify-center p-5 bg-secondary-dark border-t border-primary"
+      >
+        <div
+          class="flex justify-center flex-wrap gap-6 text-gray-500 font-medium"
+        >
+          <a class="text-primary hover:text-secondary" href="#"
+            >سياسة الخصوصية</a
+          >
+          <a class="text-primary hover:text-secondary" href="#"
+            >شروط الاستخدام</a
+          >
+        </div>
+        <p dir="rtl" class="text-center text-white font-medium">
+          &copy; جميع الحقوق محفوظة لـ
+          <a
+            href="http://yazn-108.github.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-primary"
+            >yazn_108</a
+          >
+        </p>
+        <!-- <p class="text-center text-white font-medium">
+        &copy; 2025 yazn_108. All rights reserved.
+        </p> -->
+      </div>
+    </footer>
+    <script src="js/NavBar.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script>
+      ScrollReveal({ reset: true }).reveal("#home", {
+        viewFactor: 0.3,
+      });
+      ScrollReveal({ reset: false }).reveal("#our-methodology", {
+        duration: 1000,
+        // delay: 200,
+        scale: 0.9,
+      });
+      ScrollReveal({ reset: false }).reveal("#our-partners", {
+        duration: 1000,
+        delay: 0,
+        distance: "50px",
+        origin: "bottom",
+        viewFactor: 0.5,
+      });
+      ScrollReveal({ reset: false }).reveal(".our-projects-desktop", {
+        duration: 1000,
+        delay: 200,
+        scale: 0.9,
+      });
+      ScrollReveal({ reset: true }).reveal(".our-projects-mobile .web-sites", {
+        duration: 1000,
+        delay: 200,
+        opacity: 0,
+      });
+      ScrollReveal({ reset: true }).reveal(
+        ".our-projects-mobile .ux-ui-designs",
+        {
+          duration: 1000,
+          delay: 200,
+          opacity: 0,
+        }
+      );
+      ScrollReveal({ reset: true }).reveal(
+        ".our-projects-mobile .mobile-apps",
+        {
+          duration: 1000,
+          delay: 200,
+          opacity: 0,
+        }
+      );
+      ScrollReveal({ reset: false }).reveal("#about-us", {
+        duration: 1000,
+        // delay: 200,
+        scale: 0.9,
+        viewFactor: 0.4,
+      });
+      ScrollReveal({ reset: true }).reveal("#our-services #web-sites", {
+        duration: 1000,
+        delay: 200,
+        opacity: 0,
+      });
+      ScrollReveal({ reset: true }).reveal("#our-services #ux-ui-designs", {
+        duration: 1000,
+        delay: 200,
+        opacity: 0,
+      });
+      ScrollReveal({ reset: true }).reveal("#our-services #mobile-apps", {
+        duration: 1000,
+        delay: 200,
+        opacity: 0,
+      });
+    </script>
+  </body>
+</html>

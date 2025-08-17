@@ -1,0 +1,84 @@
+@import "tailwindcss";
+@custom-variant hover (&:hover);
+body {
+  font-family: "Playpen Sans Arabic", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+button {
+  @apply cursor-pointer;
+}
+@theme {
+  --color-primary: #34a1e7;
+  --color-secondary: #344157;
+  --color-secondary-dark: #101828;
+  --animate-fade-in-scale: fade-in-scale 0.3s ease-out;
+  @keyframes fade-in-scale {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+header.scroll {
+  @apply top-1 w-[99%] rounded-[10px] border;
+}
+nav li.active {
+  @apply text-white bg-primary;
+}
+nav.open {
+  @apply block absolute top-[calc(100%+20px)] animate-fade-in-scale bg-secondary min-h-56 w-[98%] left-2/4 -translate-x-2/4 py-4 rounded-md overflow-hidden;
+  & ul {
+    @apply flex flex-col items-center justify-center gap-4 text-white;
+  }
+}
+.toggle-menu .toggle {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  transition-duration: 0.5s;
+}
+.bars {
+  width: 100%;
+  height: 4px;
+  background-color: var(--color-primary);
+  border-radius: 4px;
+}
+#bar2 {
+  transition-duration: 0.8s;
+}
+.toggle-menu.open .toggle .bars {
+  position: absolute;
+  transition-duration: 0.5s;
+}
+.toggle-menu.open .toggle #bar2 {
+  transform: scaleX(0);
+  transition-duration: 0.5s;
+}
+.toggle-menu.open .toggle #bar1 {
+  width: 100%;
+  transform: rotate(45deg);
+  transition-duration: 0.5s;
+}
+.toggle-menu.open .toggle #bar3 {
+  width: 100%;
+  transform: rotate(-45deg);
+  transition-duration: 0.5s;
+}
+.toggle-menu.open .toggle {
+  transition-duration: 0.5s;
+  transform: rotate(180deg);
+}
+.projects ul li.active {
+  @apply text-white bg-primary;
+}
